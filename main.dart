@@ -1,11 +1,11 @@
-import 'package:demo1/src/ful_group_page.dart';
-import 'package:demo1/src/gesture_page.dart';
-import 'package:demo1/src/layout.dart';
-import 'package:demo1/src/less_group_page.dart';
-import 'package:demo1/src/router/Router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_study/src/animation.dart';
+import 'package:flutter_study/src/async.dart';
+import 'package:flutter_study/src/isolate.dart';
+import 'package:flutter_study/src/router/Router.dart';
+import 'package:flutter_study/src/shadow.dart';
 
-void main() => runApp(new GesturePage());
+void main() => runApp(new IsolateApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,14 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter bottomNavigationBar',
       theme: new ThemeData.fallback(),
       home: Scaffold(
-        appBar: AppBar(
-          title:Text('main')
-        ),
-        body:Center(
-          child:Text('Flutter DEMO')
-        )
-      ) ,
+          appBar: AppBar(title: Text('main')),
+          body: Center(child: Text('Flutter DEMO'))),
     );
   }
 }
-

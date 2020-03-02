@@ -1,6 +1,6 @@
-import 'package:demo1/src/router/Page1.dart';
-import 'package:demo1/src/router/Page2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_study/src/router/Page1.dart';
+import 'package:flutter_study/src/router/Page2.dart';
 
 
 class Router extends StatelessWidget {
@@ -43,7 +43,8 @@ class _RouterNavigatorState extends State<RouterNavigator>{
     return Container(
       child:RaisedButton(
         onPressed:(){
-          Navigator.pushNamed(context, routeName);
+          // Navigator.pushNamed(context, routeName);
+          Navigator.of(context).pushNamed(routeName);
         },
         child: Text(title),
       )
